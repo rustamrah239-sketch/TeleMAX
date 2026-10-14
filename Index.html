@@ -2,105 +2,124 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeleMAX — Официальный сайт мессенджера</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Шапка сайта -->
+    <!-- Навигация -->
     <header class="header">
-        <div class="container">
-            <div class="logo-wrapper">
-                <img src="assets/logo.png" alt="TeleMAX Logo" class="logo-img">
-                <span class="logo-text">TeleMAX</span>
+        <div class="container header-grid">
+            <div class="brand">
+                <img src="assets/logo.png" alt="TeleMAX Logo" class="brand-logo">
+                <span class="brand-name">TeleMAX</span>
             </div>
-            <nav class="nav">
-                <a href="#features" class="nav-link">Преимущества</a>
-                <a href="downloads/TeleMAX.apk" class="btn btn-secondary" download>Скачать APK</a>
+            <nav class="header-nav">
+                <a href="#features" class="nav-link">💎 Фишки</a>
+                <a href="#install" class="nav-link">🚀 Установка</a>
             </nav>
+            <a href="https://github.com" class="btn btn-outline">Скачать APK 📥</a>
         </div>
     </header>
 
-    <!-- Главный экран -->
-    <section class="hero">
-        <div class="container hero-container">
-            <div class="hero-content">
-                <span class="badge">Официальный релиз</span>
-                <h1 class="hero-title">Новое поколение мобильного общения</h1>
-                <p class="hero-subtitle">
-                    TeleMAX — это независимый, быстрый и безопасный мессенджер, созданный для свободы вашего общения. Никаких ограничений, только высокая скорость работы и защита ваших данных.
-                </p>
-                <div class="hero-actions">
-                    <a href="downloads/TeleMAX.apk" class="btn btn-primary" download>
-                        <!-- Иконка скачивания -->
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                        Скачать для Android (.apk)
-                    </a>
+    <main class="main">
+        <!-- Главный экран -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-info">
+                        <div class="status-tag">⚡️ Релиз 2026</div>
+                        <h1 class="hero-title">Свободный мобильный мессенджер</h1>
+                        <p class="hero-lead">Независимая программная платформа для мгновенного обмена данными. Высокая скорость оригинального сетевого протокола, минималистичный темный интерфейс и абсолютная автономия твоего приватного пространства. 💬</p>
+                        
+                        <div class="action-zone">
+                            <a href="https://github.com" class="btn btn-primary btn-large">
+                                📥 Скачать TeleMAX для Android
+                            </a>
+                            <span class="file-spec">🤖 Формат: APK | Прямая безопасная ссылка с GitHub</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Раздел возможностей -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Почему выбирают TeleMAX</h2>
-            <div class="features-grid">
-                
-                <!-- Карточка 1 -->
-                <div class="feature-card">
-                    <div class="feature-icon-wrapper">
-                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                        </svg>
+        <!-- Характеристики -->
+        <section id="features" class="spec-section">
+            <div class="container">
+                <div class="spec-grid">
+                    
+                    <div class="spec-card">
+                        <div class="spec-icon-box">⚡️</div>
+                        <h3 class="spec-title">Высокий отклик</h3>
+                        <p class="spec-text">Оптимизированная передача пакетов данных обеспечивает минимальный пинг при доставке твоих сообщений.</p>
                     </div>
-                    <h3 class="feature-card-title">Максимальная скорость</h3>
-                    <p class="feature-card-text">Мгновенная отправка текстовых сообщений и медиафайлов благодаря оптимизированному сетевому протоколу.</p>
-                </div>
 
-                <!-- Карточка 2 -->
-                <div class="feature-card">
-                    <div class="feature-icon-wrapper">
-                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                        </svg>
+                    <div class="spec-card">
+                        <div class="spec-icon-box">🛠</div>
+                        <h3 class="spec-title">Чистый код</h3>
+                        <p class="spec-text">Приложение не содержит скрытых фоновых процессов, сторонних трекеров активности, рекламы и спама.</p>
                     </div>
-                    <h3 class="feature-card-title">Безопасность</h3>
-                    <p class="feature-card-text">Ваша переписка конфиденциальна. Мы используем современные стандарты шифрования для защиты трафика.</p>
-                </div>
 
-                <!-- Карточка 3 -->
-                <div class="feature-card">
-                    <div class="feature-icon-wrapper">
-                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l-7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                        </svg>
+                    <div class="spec-card">
+                        <div class="spec-icon-box">👑</div>
+                        <h3 class="spec-title">Полная автономия</h3>
+                        <p class="spec-text">Независимость от крупных корпоративных экосистем и жестких централизованных регламентов.</p>
                     </div>
-                    <h3 class="feature-card-title">Легковесность</h3>
-                    <p class="feature-card-text">Приложение не перегружено лишними функциями, бережно расходует заряд батареи и память устройства.</p>
-                </div>
 
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Инструкция по установке -->
+        <section id="install" class="install-section">
+            <div class="container">
+                <h2 class="install-main-title">🔥 Как установить клиент?</h2>
+                <div class="install-steps">
+                    
+                    <div class="step-item">
+                        <div class="step-badge">01</div>
+                        <div class="step-content">
+                            <h4 class="step-title">📥 Загрузка файла</h4>
+                            <p class="step-description">Нажми на главную жёлтую кнопку выше для загрузки официального инсталлятора мессенджера в формате .apk на твой смартфон.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-badge">02</div>
+                        <div class="step-content">
+                            <h4 class="step-title">🔓 Разрешение в Android</h4>
+                            <p class="step-description">При запуске система может запросить разрешение на установку приложений из неизвестных источников. Разреши установку в настройках безопасности.</p>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-badge">03</div>
+                        <div class="step-content">
+                            <h4 class="step-title">✨ Старт общения</h4>
+                            <p class="step-description">Дождись завершения установки, запусти TeleMAX с главного экрана телефона и создай свой профиль!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Подвал -->
     <footer class="footer">
-        <div class="container footer-container">
-            <p class="copyright">&copy; 2026 TeleMAX. Все права защищены.</p>
-            <p class="author">Разработчик: rustamrah239-sketch</p>
+        <div class="container footer-grid">
+            <div class="footer-left">
+                <span class="legal">© 2026 TeleMAX. Исходный код полностью открыт. 💻</span>
+            </div>
+            <div class="footer-right">
+                <span class="dev">Разработчик: <b>rustamrah239-sketch</b> 👑</span>
+            </div>
         </div>
     </footer>
 
 </body>
-                              </html>
-                                                                 
+</html>
